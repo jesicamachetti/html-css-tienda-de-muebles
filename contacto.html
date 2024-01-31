@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head> <!--Parte superior -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Muebles</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<header>
+    <h1>Tienda <span>Muebles</span></h1>
+</header>
+
+<!--main contenido principal de un html, 1 solo por archivo-->
+
+<div class="contenedor-navegacion">
+    <nav class="nav-principal contenedor"><!--nav grupo de enlaces o navegacion-->
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="blog.html">Blog</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</div>
+
+
+
+<main class="contenido-principal contenedor">
+    <h2 class="text-center">contacto</h2>
+
+    <form class="formulario" action="url"><!--action es que se envian los datos y ahi esta la url-->
+        <fieldset><!--son campos que estan relacionados-->
+            <legend>Tus datos</legend><!--es una etiqueta que decsribe lo que agrupa-->
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input class="input" id="nombre" type="text" placeholder="Tu nombre" required>
+            </div><!--Required quiere decir que el campo es obligatorio-->
+            <div class="campo">
+                <label for="asunto">Asunto:</label>
+                <input class="input" id="asunto" type="text" placeholder="Tu asunto">
+            </div>
+            <div class="campo">
+                <label for="Email">Email:</label>
+                <input id="Email" type="text" placeholder="Tu Email">
+            </div>
+            <div class="campo">
+                <label for="tel">Teléfono:</label>
+                <input id="asunto" type="text" placeholder="Tu telefono">
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea cols="20" rows="10"></textarea>
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+            <div class="campo">
+                <label for="pais">País</label>
+                <select id="pais">
+                    <option disabled>--Seleccione--</option><!--el disabled es para que no pueda usar esa opcion-->
+                    <option value="MX">México</option>
+                    <option value="AR">Argentina</option>
+                    <option value="ES">España</option>
+                    <option value="EEUU">Estados Unidos</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> Información extra</legend>
+            <div class="campo">
+                <label for="Cliente">Cliente</label>
+                <input id="cliente" type="radio" name="tipo" value="cliente"><!--cuando los radio tienen el mismo name solo deja seleccionar una de las dos opciones, si no tienen name te deja seleccionar ambas-->
+            </div>
+
+            <div class="campo">
+                <label for="Proveedor">Proveedor</label>
+                <input id="Proveedor" type="radio" name="tipo" value="proveedor">
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoria de interés</label>
+                <input list="categorias" name="categorias">
+                <datalist id="categorias">
+                    <option value="Cocina"></option>
+                    <option value="Exterior"></option>
+                    <option value="Recamaras"></option>
+                    <option value="Oficina"></option>
+                    <option value="Televisión"></option>
+                </datalist>
+            </div>
+
+        </fieldset>
+        <input class="btn" type="submit" Enviar formulario >
+
+    </form>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="grid-footer contenedor">
+        <div>
+            <h3>Categorías</h3>
+            <nav class="footer-menu">
+                <a href="#">Cocina</a>
+                <a href="">Oficina</a>
+                <a href="">Jardin</a>
+                <a href="">Cochera</a>
+                <a href="">Domitorio</a>
+            </nav>
+        </div>
+
+        <div>
+            <h3 class="footer-menu">Sobre nosotros</h3>
+            <nav>
+                <a href="#">Nuestra Historia</a>
+                <a href="">Misión, Visión y Valores</a>
+                <a href="">Carreras</a>
+                <a href="">Políticas de Privacidad</a>
+                <a href="">Términos del Servicio</a>
+            </nav>
+        </div>
+
+        <div>
+            <h3>Soporte</h3>
+            <nav class="footer-menu">
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="">Ayuda en línea</a>
+                <a href="">Confianza y Seguridad</a>
+
+            </nav>
+        </div>
+    </div>
+    <p class="copy"> Todos los derechos reservados, tiendaMuebles </p>
+</footer>
+</body>
+
+
+</html>
